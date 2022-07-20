@@ -1,7 +1,5 @@
 #! /bin/bash
 
-IFS=$'\n'
-
 case "$1" in
 kernel-module-*)    ;; # Fedora kernel module package names start with
                       # kernel-module.

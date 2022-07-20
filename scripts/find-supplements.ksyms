@@ -1,7 +1,5 @@
 #!/bin/bash
 
-IFS=$'\n'
-
 print_modaliases() {
     declare class=$1 variants=$2 pos=$3
     if [ -n "$variants" ]; then
