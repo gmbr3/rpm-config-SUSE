@@ -248,7 +248,9 @@ Group: System/Localization \
 %{-r:Requires: %{-r*}} \
 Provides: %{-n:%{-n*}}%{!-n:%{name}}-lang-all = %{version} \
 %{-b:Provides: %{-b*}-lang = %{version}} \
+%{-b:Provides: %{-b*}-lang-all = %{version}} \
 %{-b:Conflicts: %{-b*}-lang} \
+%{-b:Conflicts: %{-b*}-lang-all} \
 BuildArch: noarch \
 %description %{-n:-n %{-n*}-}lang \
 Provides translations for the \"%{-n:%{-n*}}%{!-n:%{name}}\" package.
